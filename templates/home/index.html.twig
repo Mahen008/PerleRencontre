@@ -1,0 +1,442 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <body>
+    <div class="container">
+    <!-- bannière -->
+    <section class="banner">
+        <div class="button_banner">
+            <button class="button_cover mx-2"><i class="fas fa-image"></i> Changer de photo de couverture</button>
+            <button class="button_cover"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+    </section>
+    <!-- fin bannière -->
+ 
+    <!--Content-->
+    <section class="content">
+        <div class="content_profil">
+            <div class="card">
+                <!-- start card profil -->
+                <div class="card_my_profile">
+                    <span class="mon_profil"><b>Mon profil</b></span><i class="fas fa-ghost" style="margin-left: 85%;color: #a7a9aa; margin-top: 2%;" ></i>
+                    <label class="switch" style="float:right;">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <br><br>
+                    <div class="img_profile">
+                        <img src="images/Photo de profil.png" alt="photo de profil" class="rounded_img" style="clear: right;" >
+                    </div>
+                    <br>
+                    <div class="status">
+                        <h3 class="Makamaka">Maka Maka</h3>
+                        <div class="status_profile">
+                            <i class="fas fa-circle" style="color:#3EDC81;width: 15px;height: 15px;"></i>
+                        </div>
+                    </div>
+                    <h5 class="Maka2158">(Maka2158)</h5><br>
+                    <div align="center">
+                        <span class="idd">ID :</span><span class="numID"> 12525145</span>
+                    </div>
+                    <!-- 3 OPTIONS -->
+                    <div class="three_option">
+                        <div class="option_one">
+                            En ligne<br>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="option_two">
+                            LCS<br>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="option_three">
+                            LCWE<br>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- end 3 OPTIONS -->
+                    <br>
+                    <table class="table_profile">
+                        <thead>
+                            <tr  class="th_profile">
+                                <th class="thp1">Age</th>
+                                <th class="thp2">Sexe</th>
+                                <th class="thp3">Ville</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr  class="tb_profile">
+                                <td class="tbp1">28 ans</td>
+                                <td class="tbp2">Homme</td>
+                                <td class="tbp3">Nantes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div align="center">
+                        <button class="modif_profil"><img src="images/edit.svg" alt="photo edit"></i> Modifier mon profil</button>
+                    </div>
+                </div>
+                <!-- end card profil -->
+                <!-- start card coffre -->
+                <div class="card_coffre">
+                    <div class="card_coffre_header">
+                        <h4 class="Mon_coffre"><b>Mon coffre</b></h4><br>
+                    </div>
+                    <div class="card_coffre_content" align="center">
+                        <div>
+                            <img src="images/Group43.png" alt="photo earth" class="earth_img">
+                        </div>
+                        <div class="count_peries" style="margin-bottom:5%;">
+                            <h2 class="c1021">1021</h2>
+                            <span class="perles">Perles</span>
+                        </div>
+                    </div>
+                    <div align="center">
+                        <b><h3 class="dateRenouvellement"> Date de renouvellement: </h3> <h3 class="datechiffre"> 05/08/2020 </h3></b> <br><br>
+                        <h5 style="margin-top: 2%; color: #b1acacwidth: 106px;height: 17px;font-style: normal;font-weight: normal;font-size: 12.5px;line-height: 17px;color: #606060;">RACHAT DE PERLE</h5> 
+                        <div class="price_coffre">
+                            <div class="count_peries">
+                                <h2 class="c100">100<img src="images/VectorN.svg" alt="photo nike" class="nike_img"></h2>
+                                <b><h6 class="c5">/5£</h6></b>
+                            </div>
+                        </div>
+                        <div class="price_coffre">
+                            <div class="count_peries">
+                                <h2 class="c100">250</h2>
+                                <b><h6 class="c5">/10£</h6></b>
+                            </div>
+                        </div>
+                        <br><button class="coffre_commander">Commander</button><br>
+                    </div>
+                </div>
+                <!-- end card coffre -->
+                <!-- Start card Matching -->
+                <div class="card_matching">
+                    <div class="card_matching_header">
+                        <h4 class="Matching"><b>Matching</b></h4><span class="close"><i class="fas fa-times"></i></span>
+                        <div class="count_peries" >
+                            <h1 class="c60">60<span class="c5">%</span></h1>
+                        </div>
+                    </div>
+                    <div class="card_matching_body">
+                        <div id="progressBar">
+                            <div id="bar"></div>
+                        </div><br>
+                        <div class="status_matching">
+                            <span class="card_indentity_image"><img src="images/Rectangle 4.png" alt=""></span>
+                            <div><i class="fas fa-circle status_image" style="color: rgb(60, 204, 60);"></i></div>
+                        </div>
+                        <div class="card_indentity_body">
+                            <div class="info_1">
+                                <b style="margin-left: 6px;">Marie Claire</b><b style="margin-left: 124px;color: #9c9c9c">18 ans</b><br>
+                                <span style="margin-left: 6px;">Saint-Tropez</span><b style="margin-left: 124px;">A 800 m</b><br>                                
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+                <!-- End card Matching -->
+            </div>
+        </div>
+        <!-- start card detail -->
+        <div class="content_detail">
+            <!-- box rencard -->
+            <div class="rencard_detail">
+                <div class="envie_icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="envie_texte">
+                    <h4 class="jour">Envie du jour</h4>
+                    <p>J'ai envie de boire un coup ce soir vers 20h.</p>
+                </div>
+                <div class="envie_edit">
+                    <span class="close bg-gray"><i class="fas fa-edit"></i></span>
+                </div>
+            </div>
+            <div class="propos">
+                <div>
+                    <table class="table pp">
+                        <thead>
+                            <tr>
+                                <th class="ppt1">A propos</th>
+                                <th class="ppt2">Mes photos</th>
+                                <th class="ppt3">Mes videos</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="card_description">
+                    <br><h4>Description<span class="close bg-gray envie_edit"><i class="fas fa-edit"></i></span></h4><br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum architecto iure. Minima tenetur facilis, voluptate voluptatum accusantium repudiandae laborum beatae minus cum corporis voluptas dicta in eos veritatis facere?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum obcaecati velit! Dignissimos, quis expedita. Provident dolor quo accusantium? Consequuntur deserunt in harum velit est aliquid ab ut blanditiis nobis.
+                    </p>
+                </div>
+                <div class="card_quel_coin">
+                    <br><h4>Dans quel coin ?<span class="close bg-gray envie_edit"><i class="fas fa-edit"></i></span></h4><br>
+                    <div class="info_coin">
+                        <div class="addresse_coin">
+                            <div><h4 class="text_gray">Ville</h4></div><span class="text_grayR">Paris</span><br><br>
+                            <div><h4 class="text_gray">Département</h4></div><span class="text_grayR">Paris</span><br><br>
+                            <div><h4 class="text_gray">Région</h4></div><span class="text_grayR">Hautes-Alpes</span><br><br>
+                            <div><h4 class="text_gray">Pays</h4></div><span class="text_grayR">France</span><br><br>
+                        </div>
+                        <div class="geolocation_coin">
+                            <button class="geolocation"> Géolocalisation</button>
+                                <div id="maCarte" width="400" height="300"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box description -->
+                    <!-- box map -->
+                    <div id="mapid"></div>
+                    <!-- box map -->
+
+                <!-- box Mes secrets -->
+                <div class="card_mon_physique">
+                    <h4>Mon physique<span class="close bg-gray envie_edit"><i class="fas fa-edit"></i></span></h4>
+                    <table class="table">
+                        <tr>
+                            <td class="mon_physique1">Age</td>
+                            <td class="mon_physique2">Séxualité</td>
+                            <td class="mon_physique3">Longueurs des cheveux</td>
+                        </tr>
+                        <tr>
+                            <td class="mon_physiqueR1">32 ans</td>
+                            <td class="mon_physiqueR2">Femme</td>
+                            <td class="mon_physiqueR3">Court</td>
+                        </tr>
+                        <tr>
+                            <td class="mon_physique1">Taille</td>
+                            <td class="mon_physique2">Couleur de cheveux</td>
+                            <td class="mon_physique3">Couleur des yeux</td>
+                        </tr>
+                        <tr>
+                            <td class="mon_physiqueR1">1m75</td>
+                            <td class="mon_physiqueR2">Marron claire</td>
+                            <td class="mon_physiqueR3">Marron</td>
+                        </tr>
+                        <tr>
+                            <td class="mon_physique1">Poids</td>
+                            <td class="mon_physique2">Style de cheuveux</td>
+                            <td class="mon_physique3">Sylouhette</td>
+                        </tr>
+                        <tr>
+                            <td class="mon_physiqueR1">58kg</td>
+                            <td class="mon_physiqueR2">Laché</td>
+                            <td class="mon_physiqueR3">Mince</td>
+                        </tr>
+                    </table>
+                </div><br>
+                <!-- box mon physique -->
+
+                <!-- box Mes secrets -->
+                <div class="card_mes_secrets">
+                    <h4>Mes secrets<span class="close bg-gray envie_edit"><i class="fas fa-edit"></i></span></h4>
+                    <table class="table">
+                        <tr>
+                            <td class="mes_secrets1">Je craque pour</td>
+                            <td class="mes_secrets2">J'aime porter</td>
+                        </tr>
+                        <tr>
+                            <td class="mes_secretsR1">Dentelles</td>
+                            <td class="mes_secretsR2">du bleu</td>
+                        </tr>
+                        <tr>
+                            <td class="mes_secrets1">Je frissonne pour</td>
+                            <td class="mes_secrets2">Sous la couette</td>
+                        </tr>
+                        <tr>
+                            <td class="mes_secretsR1">Les yeux cachés</td>
+                            <td class="mes_secretsR3">Caleçons</td>
+                        </tr>
+                    </table>
+                </div><br>
+                <!-- box Mes secrets -->
+                <!-- box ma style de vie -->
+                <div class="card_ma_style_de_vie">
+                    <h4>Style de vie<span class="close bg-gray envie_edit"><i class="fas fa-edit"></i></span></h4>
+                    <table class="table">
+                        <tr>
+                            <td class="ma_style1">Passe temps</td>
+                            <td class="ma_style2">Dégaine</td>
+                            <td class="ma_style3">Sport</td>
+                            <td class="ma_style4">Tabac</td>
+                        </tr>
+                        <tr>
+                            <td class="ma_styleR1">Natation</td>
+                            <td class="ma_styleR2">Bio</td>
+                            <td class="ma_styleR3">Basket</td>
+                            <td class="ma_styleR4">sans</td>
+                        </tr>
+                        <tr>
+                            <td class="ma_style1">Sous la pluie</td>
+                            <td class="ma_style2">Alimentation</td>
+                            <td class="ma_style3">Hobbies</td>
+                            <td class="ma_style4">Alcool</td>
+                        </tr>
+                        <tr>
+                            <td class="ma_styleR1">Nu</td>
+                            <td class="ma_styleR2">équilibré</td>
+                            <td class="ma_styleR3">Foot</td>
+                            <td class="ma_styleR4">Sans</td>
+                        </tr>
+                        <tr>
+                            <td class="ma_style1">En famille</td>
+                            <td class="ma_style2">J'aime manger</td>
+                            <td class="ma_style3">Gout musicaux</td>
+                            <td class="ma_style4"></td>
+                        </tr>
+                        <tr>
+                            <td class="ma_styleR1">Bien</td>
+                            <td class="ma_styleR2">Poulet</td>
+                            <td class="ma_styleR3">Jazz</td>
+                            <td class="ma_styleR4"></td>
+                        </tr>
+                    </table>
+                </div><br>
+                <!-- box ma style de vie -->
+                <!-- box mais encore -->
+                <div class="card_mais_encore">
+                    <h4>Mais encore<span class="close bg-gray envie_edit"><i class="fas fa-edit"></i></span></h4>
+                    <table class="table">
+                        <tr>
+                            <td class="mais_encore1">Langues parlées</td>
+                            <td class="mais_encore2">Professions</td>
+                            <td class="mais_encore3">Personnalité</td>
+                            <td class="mais_encore4">Origines</td>
+                        </tr>
+                        <tr>
+                            <td class="mais_encoreR1">Anglais</td>
+                            <td class="mais_encoreR2">Musicien</td>
+                            <td class="mais_encoreR3">Taquine</td>
+                            <td class="mais_encoreR4">Asiatique</td>
+                        </tr>
+                        <tr>
+                            <td class="mais_encore1">Scolarité et études</td>
+                            <td class="mais_encore2">Enfants</td>
+                            <td class="mais_encore3">Signes astrologique</td>
+                            <td class="mais_encore4"></td>
+                        </tr>
+                        <tr>
+                            <td class="mais_encoreR1">DUT</td>
+                            <td class="mais_encoreR2">sans</td>
+                            <td class="mais_encoreR3">Belier</td>
+                            <td class="mais_encoreR4"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- box mais encore -->
+            </div>
+        </div>
+        <!-- end card detail --> 
+        <!-- start card video -->
+        <div class="content_video">
+            <div class="cardav">
+                <div class="card_coffre_header">
+                    <h3 class="mes_video"><b>Mes video</b></h3>
+                </div>
+                
+                <div class="card_video_content">
+                    <img class="row" src="images/Rectangle 198.png" >
+                    <img class="row" src="images/Rectangle 201.png" >
+                    <img class="row" src="images/Rectangle 202.png" >
+                    <img class="row" src="images/Rectangle 203.png" >
+                </div> 
+            </div>
+                <div class="card_description_Vocale">
+                <div class="card_Vocales">
+                    <h3 class="card_Vocales_header"><b>Descriptions Vocales</b></h3><span class="close gray"><img class="audio" src="images/Vector.svg"><i class="fas fa-plus audioplus"></i></span>
+                </div>
+                <div class="card_Vocales_content">
+                    <i class="fas fa-play" style="margin-left: 15px;margin-top: 2%;background-color: #FAFAFA;"></i><br>
+                    <img class="audioo" src="images/Vectorr.svg"><img class="audioa" src="images/Vectorr.svg">
+                    <img class="audioo" src="images/Vectorr.svg"><img class="audioa" src="images/Vectorr.svg">
+                    <img class="audioo" src="images/Vectorr.svg"><img class="audioa" src="images/Vectorr.svg">
+                    <img class="audio" src="images/Rectangle 270.png">
+                    <i class="fas fa-play" style="margin-left: 15px;"></i><br>
+                    <img class="audioo" src="images/Vectorr.svg"><img class="audioa" src="images/Vectorr.svg">
+                    <img class="audioo" src="images/Vectorr.svg"><img class="audioa" src="images/Vectorr.svg">
+                    <img class="audioo" src="images/Vectorr.svg"><img class="audioa" src="images/Vectorr.svg">
+                    <img class="audio" src="images/Rectangle 270.png">
+                </div>  
+            </div>
+                <div class="card_mes_photos">
+                <div class="card_photos">
+                    <h3 class="card_photos_header"><b>Mes photos</b></h3><span class="close gray"><i class="fas fa-plus"></i></span>
+                </div>
+                <div class="card_photos_content">
+                    <img class="photo" src="images/Rectangle 193.png">
+                    <img class="photos" src="images/Rectangle 194.png">
+                    <img class="photos" src="images/Rectangle 195.png">
+                    <img class="photo" src="images/Rectangle 198.png">
+                </div>
+                </div>
+                <div class="card_mes_amis">
+                <div class="card_amis">
+                    <h3 class="card_amis_header"><b>Mes amis</b></h3><span class="close gray"><i class="fas fa-search"></i></span>
+                </div>
+                <div class="card_amis_content">
+                    {# <div class="onligne">
+                        <img alt="Avatar" class="avatar" src="images/sala.png"><span class="name">Annais Devia</span><i class="fas fa-comments"></i>
+                        <i class="fas fa-circle" style="color:rgb(8, 192, 8);float: right;"></i>
+                    </div>
+                    <br>
+                    <div class="onligne">
+                        <img alt="Avatar" class="avatar" src="images/sal.png"><span class="name">Jean Marc Antoine</span><i class="fas fa-comments"></i>
+                        <i class="fas fa-circle" style="color:rgb(8, 192, 8);float: right;"></i>
+                    </div> #}
+                    <table class="table">
+                    <tbody>
+                        <tr>
+                            <td scope="row"><img alt="Avatar" class="avatar" src="images/Ellipse 36.png"></td>
+                            <td class="nom"><span class="name">Annais Devia</span></td>
+                            <td><img alt="msginsta" class="msginsta" src="images/icons8_chat.svg"></td>
+                            <td><i class="fas fa-circle" style="color:rgb(8, 192, 8);float: right;width: 10px;height: 10px;"></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><img alt="Avatar" class="avatar" src="images/Ellipse 37.png"></td>
+                            <td class="nom"><span class="name">Jean Marc Antoine</span></td>
+                            <td><img alt="msginsta" class="msginsta" src="images/icons8_chat.svg"></td>
+                            <td><i class="fas fa-circle" style="color:rgb(8, 192, 8);float: right;width: 10px;height: 10px;"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                </div>
+
+                <div>
+                    <div class="card_videos_des_membres">
+                    <div class="card_videos_membres">
+                        <h3 class="card_vm_header"><b>Les vidéos des membres</b></h3>
+                        <img class="card_vidéo_membre" src="images/Rectangle 49.png" alt="vidéo membre">
+                        <i class="fas fa-circle status_image2" style="color: rgb(60, 204, 60);"></i>
+                        <div class="card_indentity_body">
+                            <div class="infoFin">
+                                <b>Eleanor Pena</b><span style="float: right;"> 18 ans </span><br>
+                                Saint-Tropez <span style="float: right;color:#563456;"><b>A 800 m</b></span><br>
+                                <i class="fas fa-eye" style:"height: 8.75px;"></i>245<span style="float: right;">5/11/20</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <!-- end card video -->
+    </section>
+    <!--Fin Content-->
+    </div>
+    </body>
+    {{ include("partials/footer.html.twig") }}
+{% endblock %}

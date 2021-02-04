@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Accueil{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/leaflet.css')}}" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+            <link rel="stylesheet" href="{{ asset('css/MarkerCluster.css')}}">
+            <link rel="stylesheet" href="{{ asset('css/MarkerCluster.Default.css')}}">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+        {% endblock %}
+    </head>
+    <body>
+     <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">                                  
+                    <table class="table hh">
+                            <tr>
+                                <th class="h1"><img src="images/operleE.svg" alt="logo" class="logoE_img"></th>
+                                <th class="h2"><b><span class="perle">Perle</span></b><span class="rencontre"> Rencontre</span></th>
+                                <th class="h3"><span class="love"> Rencontre love </span></th>
+                                <th class="h4"><img src="images/Group 434.svg" alt="logo" class="logo_img"></th>
+                            </tr>
+                    </table>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <table class="table hhh">
+                        <tr>
+                            <th class="hhht"><a href="#" class="linkAccueil">Accueil</a></th>
+                            <th class="hhhtL"><a href="#" class="linkActualit">Actualités</a><i class="fas fa-circle" style="position: absolute;margin-top:2px;color:#FF7C6C;width: 4px;height: 4px;"></i></th>
+                            <th class="hhht"><a href="#" class="linkRadar">Radar</a></th>
+                            <th class="hhhtLi"><a href="#" class="linkLive">Live</a><i class="fas fa-circle" style="position: absolute;margin-top:2px;color:#FF7C6C;width: 4px;height: 4px;"></i></th>
+                            <th class="hhht"><a href="#" class="ellipsis"><i class="fas fa-ellipsis-h"></i></a></th>
+                        </tr>
+                </table>
+                {# <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#" class="linkAccueil">Accueil</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="linkActualit">Actualités</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="linkRadar">Radar</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="linkLive">Live</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+                    </li>
+                </ul> #}
+            </div>
+            <div class="social">
+            <table class="table hhhh">
+                    <tr>
+                        <th class="notif1"><a href="#"><img src="images/Photo de profil.png" class="avatar" alt="Sary" width="30" height="15"></a></th>
+                        <th class="notif2"><a href="#" class="notification"><span><img src="images/icons8_search.svg" alt="recherche" class="notif_search"></span></a></th>
+                        <th class="notif3"><a href="#" class="notification"><span><img src="images/icons8_notif.svg" alt="notif" class="notif_img"></span><span class="badge">+5</span></a></th>
+                        <th class="notif4"><a href="#" class="notification"><span><img src="images/icons8_chat.svg" alt="message" class="notif_msg"></span><span class="badge">+1</span></a></th>
+                        <th class="notif5"><a href="#" class="notification"><span><img src="images/Group 2.svg" alt="menu" class="notif_menu"></span></a></th>
+                    </tr>
+            </table>
+                {# <a href="#"><img src="images/Photo de profil.png" class="avatar" alt="Sary" width="30" height="15"></a>
+                <a href="#" class="notification"><span><img src="images/icons8_search.svg" alt="recherche" class="notif_search"></span></a>
+                <a href="#" class="notification"><span><img src="images/icons8_notif.svg" alt="notif" class="notif_img"></span><span class="badge">+5</span></a>
+                <!-- free fas fa-comment-alt -->
+                <a href="#" class="notification"><span><img src="images/icons8_chat.svg" alt="message" class="notif_msg"></span><span class="badge">+1</span></a>
+                <a href="#" class="notification"><span><img src="images/Group 2.svg" alt="menu" class="notif_menu"></span></a> #}
+            </div>
+        </div>
+    </nav>
+    <!-- Fin navigation -->
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>
